@@ -1,4 +1,4 @@
-# AI-Research-Assistant-
+# AI-Research-Assistant
 Multi step Agentic AI research workflow using Ollama and transformer models for topic driven analysis summarization and knowledge synthesis.
 
 # AI Research Assistant
