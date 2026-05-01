@@ -14,7 +14,7 @@ Designed as a lightweight GenAI system for automated literature understanding an
 
 Tech Stack: Python ,Ollama, HuggingFace Transformers, Langchain , Langgraph and Prompt Engineering.
 
-* Example Use Cases
+* Example Use Cases :
 Automated topic exploration
 Literature review assistance
 Research report generation
