@@ -1,68 +1,60 @@
 # AI-Research-Assistant-
 Multi step Agentic AI research workflow using Ollama and transformer models for topic driven analysis summarization and knowledge synthesis.
 
-An Agentic AI research assistant that performs automated topic analysis and generates structured research-style outputs using Ollama and transformer-based LLM pipelines.
-Designed to demonstrate practical implementation of multi-step reasoning workflows for automated knowledge synthesis from unstructured text.
+# AI Research Assistant
 
-Key Features
+An Agentic AI research assistant that performs automated topic analysis and generates structured research-style outputs using local LLM inference with Ollama and transformer-based NLP pipelines.
 
+This project demonstrates how multi-step reasoning workflows can be used to automate literature understanding and knowledge synthesis from a single input topic.
 
-Topic-driven automated research analysis
+## Key Features
 
+- Topic-driven automated research analysis
+- Agentic multi-step reasoning workflow
+- Transformer-based summarization and insight extraction
+- Structured research-ready output generation
+- Local LLM execution using Ollama
+- Prompt-engineered knowledge synthesis pipeline
 
-Agentic multi-step reasoning pipeline
+## Tech Stack
 
+Python  
+Ollama  
+HuggingFace Transformers  
+Prompt Engineering  
+Agentic AI Workflows  
 
-Transformer-based summarization and insight extraction
+## How It Works
 
+Input Topic → Intent Analysis → Context Processing → Insight Extraction → Structured Research Output
 
-Structured research-ready output generation
+The system generates concise research-style summaries designed for quick topic exploration and literature understanding.
 
+## Example Input
 
-Local LLM execution using Ollama
-
-
-Prompt-engineered knowledge synthesis workflow
-
-
-
-Tech Stack
-Python
-Ollama
-HuggingFace Transformers
-Prompt Engineering
-Agentic AI Workflows
-
-How It Works
-Input topic → Intent understanding → Contextual analysis → Insight extraction → Structured research output
-Implements a lightweight agentic pipeline for scalable automated literature understanding.
-
-Example Input
 Impact of transformer models on modern NLP systems
-Example Output
 
+## Example Output
 
-topic overview
+- topic overview
+- key insights
+- structured explanation
+- research-ready summary
 
+## Use Cases
 
-key insights
+Automated literature review  
+Research topic exploration  
+Knowledge synthesis workflows  
+GenAI experimentation with agentic pipelines  
 
+## Run Locally
 
-structured explanation
+git clone https://github.com/thkrdanubhav/AI-Research-Assistant-.git  
+cd AI-Research-Assistant-  
+pip install -r requirements.txt  
+python app.py
 
+## Why This Project Matters
 
-research-ready summary
-
-
-
-Use Cases
-Automated literature review
-Research topic exploration
-Knowledge synthesis pipelines
-GenAI workflow prototyping
-
-Run Locally
-git clone https://github.com/thkrdanubhav/AI-Research-Assistant-.gitcd AI-Research-Assistant-pip install -r requirements.txtpython app.py
-
-Why This Project Matters
-This project demonstrates real-world implementation of Agentic AI systems using local LLM infrastructure, highlighting practical skills in transformer pipelines, prompt engineering, and automated research workflows applicable to modern GenAI applications 🚀
+This project demonstrates practical implementation of Agentic AI systems using local LLM infrastructure, highlighting experience with transformer pipelines, prompt engineering, and automated research workflows relevant to modern GenAI applications.
