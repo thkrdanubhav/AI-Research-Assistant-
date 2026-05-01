@@ -23,6 +23,8 @@ Ollama
 HuggingFace Transformers  
 Prompt Engineering  
 Agentic AI Workflows  
+Langchain
+Langgraph
 
 ## How It Works
 
