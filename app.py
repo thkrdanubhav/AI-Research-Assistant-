@@ -2,15 +2,10 @@ import streamlit as st
 from graph import build_graph
 
 
-# ---------------- PAGE CONFIG ---------------- #
-
 st.set_page_config(
     page_title="AI Research Assistant",
     layout="wide"
 )
-
-
-# ---------------- ADVANCED UI STYLING ---------------- #
 
 st.markdown("""
 <style>
@@ -20,7 +15,6 @@ st.markdown("""
 [data-testid="stAppViewContainer"] {
     background: linear-gradient(135deg,#020617,#020617,#0f172a);
 }
-
 
 /* Top header */
 
@@ -109,7 +103,6 @@ div[data-baseweb="input"] input {
     color: white;
 }
 
-
 /* Button styling */
 
 div.stButton > button {
@@ -159,7 +152,6 @@ div.stButton > button {
     color: #e2e8f0;
 }
 
-
 /* Paragraph styling */
 
 .paper p,
@@ -183,16 +175,10 @@ div.stButton > button {
 </style>
 """, unsafe_allow_html=True)
 
-
-# ---------------- TOP BAR ---------------- #
-
 st.markdown(
     "<div class='topbar'>LangGraph Multi-Agent Research Workflow · Local LLaMA-3</div>",
     unsafe_allow_html=True
 )
-
-
-# ---------------- HEADER ---------------- #
 
 st.markdown(
     "<div class='main-title'>AI Research Assistant</div>",
@@ -203,9 +189,6 @@ st.markdown(
     "<div class='subtitle'>Generate structured academic literature reports instantly</div>",
     unsafe_allow_html=True
 )
-
-
-# ---------------- FEATURE CARDS ---------------- #
 
 c1, c2, c3 = st.columns(3)
 
@@ -234,15 +217,11 @@ with c3:
 st.markdown("<div class='divider'></div>", unsafe_allow_html=True)
 
 
-# ---------------- WORKFLOW TEXT ---------------- #
-
 st.markdown(
     "<div class='workflow'>Planner → Writer → Reviewer → Gap Analyzer → Future Work Generator</div>",
     unsafe_allow_html=True
 )
 
-
-# ---------------- INPUT PANEL ---------------- #
 
 col1, col2 = st.columns([5,1])
 
@@ -255,8 +234,6 @@ with col1:
 with col2:
     generate = st.button("Generate Report")
 
-
-# ---------------- GENERATION ---------------- #
 
 if generate and topic:
 
@@ -283,8 +260,6 @@ if generate and topic:
         file_name="research_report.md"
     )
 
-
-# ---------------- FOOTER ---------------- #
 
 st.markdown(
     "<div class='footer'>AI Research Assistant · Built with LangGraph + Ollama</div>",
