@@ -13,7 +13,6 @@ from prompts import (
 )
 
 
-# ---------------- STATE ---------------- #
 
 class ResearchState(TypedDict):
 
@@ -33,12 +32,8 @@ class ResearchState(TypedDict):
     final_output: str
 
 
-# ---------------- MODEL ---------------- #
-
 llm = ChatOllama(model="llama3")
 
-
-# ---------------- TITLE AGENT ---------------- #
 
 def generate_title(state):
 
@@ -50,8 +45,6 @@ def generate_title(state):
 
     return {"title": response.content}
 
-
-# ---------------- OUTLINE AGENT ---------------- #
 
 def generate_outline(state):
 
@@ -70,8 +63,6 @@ def generate_outline(state):
     return {"outline": outline}
 
 
-# ---------------- ABSTRACT AGENT ---------------- #
-
 def generate_abstract(state):
 
     topic = state["topic"]
@@ -82,8 +73,6 @@ def generate_abstract(state):
 
     return {"abstract": response.content}
 
-
-# ---------------- SECTION WRITER AGENT ---------------- #
 
 def generate_sections(state):
 
@@ -105,8 +94,6 @@ def generate_sections(state):
 
     return {"sections": compiled_sections}
 
-
-# ---------------- REVIEW QUALITY AGENT ---------------- #
 
 def review_sections(state):
 
@@ -130,8 +117,6 @@ Text:
     return {"review_score": response.content.strip()}
 
 
-# ---------------- CONDITIONAL ROUTER ---------------- #
-
 def should_regenerate(state):
 
     if "FAIL" in state["review_score"]:
@@ -139,8 +124,6 @@ def should_regenerate(state):
 
     return "continue"
 
-
-# ---------------- REWRITE AGENT ---------------- #
 
 def rewrite_sections(state):
 
@@ -158,9 +141,6 @@ Text:
 
     return {"sections": response.content}
 
-
-# ---------------- RESEARCH GAP AGENT ---------------- #
-
 def generate_research_gaps(state):
 
     topic = state["topic"]
@@ -172,8 +152,6 @@ def generate_research_gaps(state):
     return {"research_gaps": response.content}
 
 
-# ---------------- FUTURE WORK AGENT ---------------- #
-
 def generate_future_work(state):
 
     topic = state["topic"]
@@ -184,8 +162,6 @@ def generate_future_work(state):
 
     return {"future_work": response.content}
 
-
-# ---------------- FINAL REVIEWER AGENT ---------------- #
 
 def final_review(state):
 
@@ -232,8 +208,6 @@ This report summarizes key developments, challenges, and future opportunities re
 
     return {"final_output": response.content}
 
-
-# ---------------- GRAPH BUILDER ---------------- #
 
 def build_graph():
 
